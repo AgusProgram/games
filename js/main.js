@@ -140,3 +140,30 @@ function enviarEmail(e) {
     }, 3000);
   }, 5000);
 }
+
+window.sr = ScrollReveal();
+
+sr.reveal('.category', {
+   duration: 3000,
+   origin: 'top',
+   distance: '-100px'
+});
+
+sr.reveal('.news', {
+  duration: 2000,
+  origin: 'top',
+  distance: '-150px'
+});
+
+sr.reveal('.scroll-text', {
+  duration: 3000,
+  origin: 'top',
+  distance: '-300px',
+});
+
+sr.reveal('.scroll-controller', {
+  duration: 3000,
+  origin: 'top',
+  distance: '-300px',
+});
+

@@ -1,3 +1,10 @@
+:root {
+    --text:#f2f2f2 ;
+}
+.text-person {
+    color:#f2f2f2!important;
+}
+
 body {
     font-family: 'Do Hyeon', sans-serif;
     background-color: #000000;
@@ -19,7 +26,7 @@ html {
 }
 
 .btn:hover {
-	color: #fff;
+	color: var(--text);
 }
 
 #carousel img {
@@ -90,7 +97,7 @@ svg {
 
 .btn-games {
     background-color: rgb(35, 33, 128);
-    color: #fff;
+    color: var(--text);
     border: 1px solid rgb(17, 17, 34);
 }
 
@@ -155,32 +162,28 @@ a:hover {
     margin-top: 6rem;
 }
 
+#controller {
+    width: 95%;
+}
+
 .fondo-separador {
     background-image: url(../img/separador.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 200px;
+    height: 300px;
     background-attachment: fixed;
 }
 
 #img_contact {
-    opacity: .8;
+    opacity: .7;
 }
 
 /* Footer  */
 
 footer,
 .bg-nav {
-
-    background: rgba(5, 0, 48, 1);
-    background: -moz-linear-gradient(top, rgba(5, 0, 48, 1) 0%, rgba(26, 56, 197, 1) 61%, rgba(31, 68, 229, 1) 74%, rgba(30, 64, 201, 1) 98%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(5, 0, 48, 1)), color-stop(61%, rgba(26, 56, 197, 1)), color-stop(74%, rgba(31, 68, 229, 1)), color-stop(98%, rgba(30, 64, 201, 1)));
-    background: -webkit-linear-gradient(top, rgba(5, 0, 48, 1) 0%, rgba(26, 56, 197, 1) 61%, rgba(31, 68, 229, 1) 74%, rgba(30, 64, 201, 1) 98%);
-    background: -o-linear-gradient(top, rgba(5, 0, 48, 1) 0%, rgba(26, 56, 197, 1) 61%, rgba(31, 68, 229, 1) 74%, rgba(30, 64, 201, 1) 98%);
-    background: -ms-linear-gradient(top, rgba(5, 0, 48, 1) 0%, rgba(26, 56, 197, 1) 61%, rgba(31, 68, 229, 1) 74%, rgba(30, 64, 201, 1) 98%);
-    background: linear-gradient(to bottom, rgba(5, 0, 48, 1) 0%, rgba(26, 56, 197, 1) 61%, rgba(31, 68, 229, 1) 74%, rgba(30, 64, 201, 1) 98%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#050030', endColorstr='#1e40c9', GradientType=0);
+    background: rgba(68,33,194,1);
 }
 
 .redes-sociales.list-unstyled.d-flex {
@@ -189,7 +192,7 @@ footer,
 }
 
 footer li i {
-    color: #fff;
+    color: var(--text);
 }
 
 footer li i:hover {
@@ -246,7 +249,7 @@ footer li i:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: var(--text);
     -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
     animation: sk-foldCubeAngle 2.4s infinite linear both;
     -webkit-transform-origin: 100% 100%;
@@ -352,7 +355,7 @@ hr:not([size]) {
 
 @media screen and (max-width: 468px) {
     .navbar-light .navbar-toggler {
-        border-color: #fff;
+        border-color: var(--text);
     }
 
     .dropdown-menu.bg-nav.text-center.show {
